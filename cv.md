@@ -6,10 +6,10 @@
 **Telegram**: @emikanarski  
 **GitHub**: @EmilyRight  
 **City**: Moscow  
-***
+-------------
 ## About me
 I'm junior frontend developer who is eager to become senior! Studying is my favorite way of spending free time and the only one making me feel happy. Solving problems and making ideas to become real is the reason why I'd choosen frontend path and am not going to stop.  
-***
+-------------
 ## Education
 * **2009-2015s**: Kurgan State University, Department of Economics
 
@@ -19,7 +19,7 @@ I'm junior frontend developer who is eager to become senior! Studying is my favo
 * JavaScript
 * Git
 * Figma
-***
+-------------
 ## Code example
     function slidesPlugin(activeSlide=0) {
           const slides = document.querySelectorAll(".slide");
@@ -44,17 +44,17 @@ I'm junior frontend developer who is eager to become senior! Studying is my favo
     };
 
     slidesPlugin(4);
-***
+-------------
 ## Soft skills
 * Team work
 * Accuracy
 * Excellent self-organyzing
 * Аbility to meet deadlines
 * Self-studying
-***
+-------------
 ## Languages:
 **English: B2** (Upper-Intermediate)
-***
+-------------
 ## Hobbies
 * Singing, vocal coaching
 * Sports activities
