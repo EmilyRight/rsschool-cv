@@ -53,7 +53,7 @@ I'm junior frontend developer who is eager to become senior! Studying is my favo
 * Self-studying  
 -------------
 ## Languages:
-**English: B2** (Upper-Intermediate)
+*English: B2* (Upper-Intermediate)
 -------------
 ## Hobbies
 * Singing, vocal coaching
