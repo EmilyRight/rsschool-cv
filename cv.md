@@ -11,7 +11,7 @@
 I'm junior frontend developer who is eager to become senior! Studying is my favorite way of spending free time and the only one making me feel happy. Solving problems and making ideas to become real is the reason why I'd choosen frontend path and am not going to stop.  
 ***
 ## Education
-*2009-2015s: Kurgan State University, Department of Economics
+* **2009-2015s**: Kurgan State University, Department of Economics
 
 ## Technical skills
 * HTML
