@@ -44,13 +44,13 @@ I'm junior frontend developer who is eager to become senior! Studying is my favo
     };
 
     slidesPlugin(4);
--------------
+-------------  
 ## Soft skills
 * Team work
 * Accuracy
 * Excellent self-organyzing
 * Аbility to meet deadlines
-* Self-studying
+* Self-studying  
 -------------
 ## Languages:
 **English: B2** (Upper-Intermediate)
