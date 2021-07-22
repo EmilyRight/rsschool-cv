@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV by E. Kanarskaya</title>
+</head>
+<body>
+    <div class="page_container">
+        <aside>
+            <div class="main_info">
+                <div class="social_media_dash">
+                        <ul class="social_media_icons">
+                            <li class = icon>
+                                <a href="https://vk.com/emilywrong" target="blank">
+                                    <img src="https://img.icons8.com/android/24/000000/vk-com--v1.png"/>
+                                </a>
+                            </li>
+                            <li class = icon>
+                                <a href="https://github.com/EmilyRight" target="blank">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>
+                                </a>
+                            </li>
+                            <li class = icon>
+                                <a href="">
+                                    <img src="./img/icons8-instagram-30.png" alt="instagram link">
+                                </a>
+                            </li>
+                            <li class = icon>
+                                <a href="">
+                                    <img src="https://img.icons8.com/ios/50/000000/telegram-app.png"/>
+                                </a>
+                            </li>
+
+                        </ul>
+                </div>
+                <div class="main-info_contacts">
+                        <figure>
+                            <img src="./img/photo.jpg" alt="E. Kanarskaya">
+                        </figure>
+                        <div class="contact">
+                            <p><strong>Phone number:</strong></p>
+                            <a href="tel:+79828076950">+7(982)807-69-50</a>
+                        </div>
+                        <div class="contact">
+                            <p><strong>E-mail:</strong></p>
+                            <a href="gmail.com">emilya.kanarskaya@gmail.com</a>
+                        </div>
+                        <div class="contact">
+                            <p><strong>Location:</strong></p>
+                            <p>Moscow</p>
+                        </div>
+                </div>
+            </div>
+            <div class="aside_info_items">
+                <div class="info_item">
+                    <h2>Soft skills</h2>
+                    <ul>
+                        <li>Team work</li>
+                        <li>Accuracy</li>
+                        <li>Аbility to meet deadlines</li>
+                        <li>Excellent self-organyzing</li>
+                        <li>Self-studying</li>
+                    </ul>
+                </div>
+                
+                <div class="info_item">
+                    <h2>Languages</h2>
+                    <p>English: B2 (Upper-Intermediate)</p>
+                </div>
+                
+                <div class="info_item">
+                    <h2>Hobbies</h2>
+                    <ul>
+                        <li>Singing, vocal coaching</li>
+                        <li>Sports activities</li>
+                    </ul>
+                </div>
+            </div>
+                
+        </aside>
+        <main>
+            <header>
+                <p class = "name"><strong>Emilya</strong> Kanarskaya</p>
+                <p class="profession">Frontend Developer</p>
+            </header>
+
+               
+            <div class="info_item main">
+                <h2>About me</h2>
+                <p>I’m junior frontend developer who is eager to become senior! Studying is my favorite way of spending free time and the only one making me feel happy. Solving problems and making ideas to become real is the reason why I’d choosen frontend path and am not going to stop.</p>
+            </div>
+            <div class="info_item main">
+                <h2>Education</h2>
+                <p>2009-2015s: Kurgan State University, Department of Economics</p>
+            </div>
+            <div class="info_item main">
+                    <h2>Technical skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="info_item main">
+                <h2>Code example</h2>
+            <pre><code>
+                function slidesPlugin(activeSlide=0) { 
+                    const slides = document.querySelectorAll(“.slide”);
+
+                    slides[activeSlide].classList.add("active");
+                    for (const slide of slides) {
+                
+                    slide.addEventListener(“click”, () => {
+                        clearActiveClasses(); slide.classList.add(“active”)
+                    });
+                };
+                
+                    let clearActiveClasses = () => {
+                        slides.forEach((slide) => { 
+                        slide.classList.remove(“active”) 
+                    }); 
+                };
+                
+            };
+                slidesPlugin(4);
+            </code></pre>
+            </div>       
+        </main>
+        <footer>
+            <a href="https://rs.school/js/"><img src = "img/rs_school_js.svg" alt="Visit a course"></a>
+            <a href="https://github.com/EmilyRight"><strong>GitHub</strong></a>
+            <p><b>2021</b></p>  
+        </footer>
+    </div>
+</body>
+</html>
