@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
     list-style: none;
 }
@@ -12,17 +12,17 @@ a {
 }
 
 .page_container {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
-    "aside header header"
-    "aside main_content main_content"
-    "aside main_content main_content"
-    "footer footer footer";
-    grid-template-columns: repeat (3, 1fr);
+    "aside header "
+    "aside main_content"
+    "aside main_content"
+    "footer footer";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));;
     grid-auto-rows: auto;
-    gap: 3rem;
+    grid-row-gap: 1rem;
     background-color: white;
     box-shadow: 0 0 10px rgb(114, 156, 128);
 }
@@ -36,7 +36,6 @@ a {
 
 .social_media_dash {
     background-color: rgb(114, 156, 128);
-    margin-left: 5px;
 }
 
 .social_media_dash::after {
@@ -50,12 +49,11 @@ a {
     vertical-align: bottom;
 }
 .icon {
-    padding: 10px;
+    padding: 0.5vw;
 }
 
 a > img {
-    width: 30px;
-    height: 30px;
+    width: 1.5vw;
     
 }
 
@@ -70,36 +68,34 @@ a > img {
 }
 
 figure img{
-    max-width: 300px;
+    max-width: 15vw;
     border-radius: 100%;  
 }
 
 /*main*/
 main {
-    max-width: 90%;
-    padding: 0 5rem;
     text-align: left;
 }
 
 header {
-    padding: 5vh 0;
+    padding: 0.5vh;
     max-width: max-content;
     position: relative;
     margin: 0 auto;
-    grid-area: header;
+    margin-bottom: 5vh;
 }
 
 .name {
     text-align: center;
-    font-size: 3vh;
+    font-size: 2vw;
     text-transform: uppercase;
-    border: 5px solid rgb(114, 156, 128);
+    border: 1vh solid rgb(114, 156, 128);
     padding: 2vh;
 }
 
 .profession {
     position: absolute;
-    top:125px;
+    top: 11vh;
     left: 50%;
     margin-right: -50%;
     padding: 0 15px;
@@ -142,8 +138,47 @@ footer {
 }
 
 footer img {
-    min-width: 150px;
+    min-width: 10vh;
     max-height: fit-content;
+}
+
+@media (max-width: 1600px){
+    .page_container {
+      
+        grid-template-areas: 
+        "aside"
+        "header"
+        "main_content"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        grid-gap: 0px;
+    }
+    .main{
+        text-align: center;
+    }
+    .code {
+        text-align: center;
+    }
+    .code pre {
+        display: inline-block;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .main_info {
+        flex-direction: column;
+    }
+
+    .social_media_icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+    }
+
+
 }
 
 @font-face {
