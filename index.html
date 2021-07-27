@@ -117,28 +117,28 @@
                 <h2>Code example</h2>
                 <pre>
                     <code>
-function slidesPlugin(activeSlide=0) { 
-    const slides = document.querySelectorAll(“.slide”);
+                        function slidesPlugin(activeSlide=0) { 
+                            const slides = document.querySelectorAll(“.slide”);
 
-    slides[activeSlide].classList.add("active");
-    for (const slide of slides) {
+                            slides[activeSlide].classList.add("active");
+                            for (const slide of slides) {
 
-    slide.addEventListener(“click”, () => {
-        clearActiveClasses(); 
-        slide.classList.add(“active”)
-    });
-};
+                            slide.addEventListener(“click”, () => {
+                                clearActiveClasses(); 
+                                slide.classList.add(“active”)
+                            });
+                        };
 
-    let clearActiveClasses = () => {
-        slides.forEach((slide) => { 
-        slide.classList.remove(“active”) 
-    }); 
-};
+                            let clearActiveClasses = () => {
+                                slides.forEach((slide) => { 
+                                slide.classList.remove(“active”) 
+                            }); 
+                        };
 
-};
-                slidesPlugin(4);
-            </pre>
-                </code>
+                        };
+                        slidesPlugin(4);
+                    </code>
+                </pre>
             </div>       
         </main>
         <footer>
