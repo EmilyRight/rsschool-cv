@@ -9,11 +9,28 @@
 </head>
 <body>
     <div class="page_container">
+        <header>
+            <div class="logo"><strong>Emilya Kanarskaya</strong></div>
+            <nav>
+                <ul>
+                    <li>Where am I</li>
+                    <li>Who am I</li>
+                    <li>My portfolio</li>
+                    <li>I'm strong at...</li>
+                    <li>My languages</li>
+                    <li>My Education</li>
+                </ul>
+            </nav>
+        </header>
         
-        <aside>
-            
-            <div class="main_info">
-                <div class="social_media_dash">
+        <section class="main-info">
+            <div class = "main-info__header">
+                <p class = "name">Emilya Kanarskaya</p>
+                <p class="profession">Frontend Developer</p>
+            </div>
+            <div class="main-info__section">
+                <div class="main-info__block">
+                    <div class="social_media_dash">
                         <ul class="social_media_icons">
                             <li class = icon>
                                 <a href="https://vk.com/emilywrong" target="blank">
@@ -35,70 +52,91 @@
                                     <img src="https://img.icons8.com/ios/50/000000/telegram-app.png" alt="Telegram"/>
                                 </a>
                             </li>
-
                         </ul>
+                    </div>
+                    <div class="main-info__photo"> 
+                        <figure>
+                            <img src="./img/photo.jpg" alt="E. Kanarskaya">
+                        </figure>
+                        <ul class = "contacts">
+                            <li class="contact">
+                                <h3><strong>Phone number:</strong></h3>
+                                <a href="tel:+79828076950">+7(982)807-69-50</a>
+                            </li>
+                            <li class="contact">
+                                <h3><strong>E-mail:</strong></h3>
+                                <a href="gmail.com">emilya.kanarskaya@gmail.com</a>
+                            </li>
+                            <li class="contact">
+                                <h3><strong>Location:</strong></h3>
+                                <p>Moscow</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="main-info_contacts">
-                    <header>
-                        <p class = "name"><strong>Emilya</strong> Kanarskaya</p>
-                        <p class="profession">Frontend Developer</p>
-                    </header>
-                    <figure>
-                        <img src="./img/photo.jpg" alt="E. Kanarskaya">
-                    </figure>
-                    <ul class = "contacts">
-                        <li class="contact">
-                            <h3><strong>Phone number:</strong></h3>
-                            <a href="tel:+79828076950">+7(982)807-69-50</a>
-                        </li>
-                        <li class="contact">
-                            <h3><strong>E-mail:</strong></h3>
-                            <a href="gmail.com">emilya.kanarskaya@gmail.com</a>
-                        </li>
-                        <li class="contact">
-                            <h3><strong>Location:</strong></h3>
-                            <p>Moscow</p>
-                        </li>
-                    </ul>
-                </div>
+                <article class = "about info_item">
+                    <h2>About me</h2>
+                    <p>Hey there! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem soluta corrupti rerum laudantium fugit ea excepturi iste dolorem necessitatibus veniam itaque sequi voluptates, quam cumque dolores quas repellat, ullam laboriosam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ab quaerat. Rem labore reprehenderit odit veniam, deleniti aperiam culpa enim sapiente? Nesciunt soluta magni inventore expedita distinctio obcaecati nobis ipsa?</p>
+                </article>
             </div>
             
-            <div class="aside_info_items">
-                <div class="info_item">
-                    <h2>Soft skills</h2>
-                    <ul>
-                        <li>Team work</li>
-                        <li>Accuracy</li>
-                        <li>Аbility to meet deadlines</li>
-                        <li>Excellent self-organyzing</li>
-                        <li>Self-studying</li>
-                    </ul>
+        </section>
+        <section class = "portfolio">
+            <h2>My projects</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <a href = "https://rolling-scopes-school.github.io/emilyright-JSFEPRESCHOOL/museum/"><img src = "./img/louvre.jpg"></a>
+                    <h3>Louvre landing page</h3>
+                    <p>Landing page for Louvre (in process)</p>
                 </div>
-                
-                <div class="info_item">
-                    <h2>Languages</h2>
-                    <p>English: B2 (Upper-Intermediate)</p>
+                <div class="portfolio-item">
+                    <a href = "https://rolling-scopes-school.github.io/emilyright-JSFEPRESCHOOL/video-player/"><img src="./img/video.jpg"></a>
+                    <h3>Custom Video Player</h3>
+                    <p>Custom Video Player with music videos</p>
                 </div>
-                
-                <div class="info_item">
-                    <h2>Hobbies</h2>
-                    <ul>
-                        <li>Singing, vocal coaching</li>
-                        <li>Sports activities</li>
-                    </ul>
+                <div class="portfolio-item">
+                    <a href = "https://rolling-scopes-school.github.io/emilyright-JSFEPRESCHOOL/js-clock/"><img src = "./img/clocks.jpg"></a>
+                    <h3>Clocks theme</h3>
+                    <p>Theme for PC with dark and light modes</p>
+                </div>
+                <div class="portfolio-item">
+                    <a href = "https://github.com/EmilyRight/interior-studio"><img src = "img/interiour.jpg"></a>
+                    <h3>Interiour studio landing page</h3>
+                    <p>Landing Page for interiour studio with portfolio</p>
                 </div>
             </div>
-                
-        </aside>
-       
-        <main>
-            
-            
-               
-            <div class="info_item main">
-                <h2>About me</h2>
-                <p>I’m junior frontend developer who is eager to become senior! Studying is my favorite way of spending free time and the only one making me feel happy. Solving problems and making ideas to become real is the reason why I’d choosen frontend path and am not going to stop.</p>
+        </section>
+        <div class="aside_info_items">
+            <div class="info_item">
+                <h2>Soft skills</h2>
+                <ul>
+                    <li>Team work</li>
+                    <li>Accuracy</li>
+                    <li>Аbility to meet deadlines</li>
+                    <li>Excellent self-organyzing</li>
+                    <li>Self-studying</li>
+                </ul>
             </div>
+            
+            <div class="info_item">
+                <h2>Languages</h2>
+                <p>English: B2 (Upper-Intermediate)</p>
+            </div>
+            
+            <div class="info_item">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Singing, vocal coaching</li>
+                    <li>Sports activities</li>
+                </ul>
+            </div>
+        </div>
+                
+        
+        <main> 
+            
             <div class="info_item main">
                 <h2>Education</h2>
                 <p>2009-2015s: Kurgan State University, Department of Economics</p>
