@@ -7,16 +7,18 @@
     font-size: 20px;
     text-decoration: none;
     color: black;
+    scroll-behavior: smooth;
 }
 :root {
     --main-color: rgb(114, 156, 128);
+    --block-color: rgba(214, 233, 218, 0.5);
     --border-red: 1px solid red;
 }
 .page_container {
     width: 60%;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 0 0 10px var(--main-color);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     overflow: hidden;
 }
 main {
@@ -28,25 +30,36 @@ main {
 
 header {
     display: flex;
-    gap: 5rem;
     padding: 2rem;
     background-color: var(--main-color);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+    justify-content: space-between;  
+    position: relative;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-right: 1rem;
 }
 
 nav ul>li {
-    margin-right: 1rem;
-    font-size: 0.9rem;
+    margin-right: 0.7rem;
+    
 }
+nav ul>li>a {
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+nav ul>li>a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
 .main-info {
     padding: 0 20px;
-    
 
 }
 
@@ -67,35 +80,12 @@ nav ul>li {
     display: flex;
     flex-direction: row;
     position: relative;   
-}
-
-.main-info__block::before {
-    position: absolute;
-    content: "";
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgba(3, 155, 28, 0.2);
-    bottom: 15px;
-    right: -5rem;
-    z-index: 0;
-}
-
-.main-info__block::after {
-    position: absolute;
-    content: "";
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: rgba(3, 155, 28, 0.1);
-    top: -10rem;
-    right: 5rem;
-    z-index: 0;
-    animation: circle-run 10s infinite ease-in-out;
+    background-color: var(--block-color);
 }
 
 .about p{
     margin-bottom: 1rem;
+    
 
 }
 .social_media_dash {
@@ -113,6 +103,11 @@ nav ul>li {
 
 .icon {
     padding: 0.5vw;
+}
+
+.icon:hover {
+    border-top: 5px solid rgb(250, 249, 249);
+    border-bottom: 5px solid rgb(250, 249, 249);
 }
 
 a > img {
@@ -140,15 +135,15 @@ figure img{
 }
 
 .name {
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     border: 0.7rem solid var(--main-color);
     border-radius: 10px;
     padding: 1.2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .name:hover,
 .profession:hover, 
@@ -198,36 +193,8 @@ a:hover{
       content: none;
     }
 
-@keyframes circle-run {
-    from {
-        top: 100px;
-        animation-timing-function: ease-in-out;
-      }
-      25% {
-        top: 250px;
-        animation-timing-function: ease-in-out;
-      }
-      50% {
-        top: 400px;
-        left: 50px;
-        animation-timing-function: ease-in-out;
-      }
-      75% {
-        top: 75px;
-        animation-timing-function: ease-in-out;
-      }
-      to {
-        top: 100px;
-      }
-    
-}
-
 /*portfolio*/
-.portfolio {
-    padding-top: 2rem;
-}
 .portfolio-container {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -243,37 +210,87 @@ a:hover{
     max-width: 90%;
     margin: 0 auto;
     background-color: rgba(214, 233, 218, 0.5);
-    padding: 1rem;
+    padding: 1rem;   
+    transition: 0.3s;
+}
+
+.wrapper:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .portfolio-item {
     flex-basis: 50%;
+    min-height: 200px;
 }
 
 .portfolio-item a>img {
-    min-height: 5rem;
-    height: 12rem;
-    width: auto;
+    width: 100%;
 }
   .info_item {
     margin: 3vh;
     line-height: 1.5rem;
-    grid-area: main_content;
 }
 h2 {
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-}
-.info_item h2 {
-    margin-bottom: 1rem;
-}
+    position: relative;
    
-.info_item p,
-.info_item ul {
-    line-height: 1.5rem;
+     
+}
+h2:after {
+    display: block;
+    content: "";
+    background-color: var(--main-color);
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
+h2:hover:after,
+h2:focus:after {
+	width: 30%;
+}
+.item-container {
+    transform: skewY(5deg);
+    
+    background-color: rgb(156, 187, 161);
+}
+.info {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    min-height: 10rem;
+ 
+    
+}
+   
+p.info ,
+ul.info {
+    transform: skewY(-5deg);
+    margin: auto 0;
+    background-color: var(--block-color);
+    font-size: 1.3rem;
+    position: relative;
+}
+
+ul.info>li {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+code {
+    
+    margin: 0 auto;
+    text-align: left;
+}
 footer {
     background-color: rgb(114, 156, 128);
     grid-area: footer;
@@ -296,26 +313,20 @@ footer img {
     .main{
         text-align: center;
     }
-    .code {
-        text-align: center;
-    }
-    .code pre {
-        display: inline-block;
-        margin: 0 auto;
-        text-align: left;
-    }
-
+    
     .main_info {
         flex-direction: column;
     }
     a > img {
-        width: 2rem;  
+        width: 4vw;  
         margin-bottom: 10px;
     }
-
 }
 
 @media (max-width: 1024px) {
+    *{
+        font-size: 16px;
+    }
     .page_container {
         width: 95%;
     }
@@ -327,8 +338,136 @@ footer img {
         width: 3vw;  
         margin-bottom: 10px;
     }
-}
 
+    header nav>ul {
+        position: absolute;
+        gap: 20px;
+        padding: 10px;
+        margin: 0;
+        right: -200px;
+        top: 120px;
+        flex-direction: column;
+        justify-content: start;
+        background-color: var(--block-color);
+        z-index: 10;
+        transition: 1s;
+    }
+    header nav>ul.active {
+        right: 0px;
+    }
+    .burger-menu {
+        z-index: 5;
+        display: block;
+        position: relative;
+        width: 35px;
+        height: 25px;
+        cursor: pointer;
+        
+    }
+    .burger-menu span,
+    .burger-menu::before,
+    .burger-menu::after {
+       
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: rgb(252, 250, 250);
+    }
+
+    .burger-menu::before,
+    .burger-menu::after {
+        content: "";
+    }
+    .burger-menu::before {
+        top: 0;
+    }
+    .burger-menu::after {
+        bottom: 0;
+    }
+
+    .burger-menu span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+
+    .name {
+        max-width: 50%;
+    }
+} 
+
+@media (max-width: 724px) {
+    *{
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .main-info__section{
+        flex-direction: column;
+    }
+
+
+    .main-info{
+        padding: 0;
+    }
+    .profession {
+        bottom: -30px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+        
+    }
+    .main-info__block {
+        flex-direction: column-reverse;
+    }
+    .social_media_dash {
+        justify-content: center;
+    }
+    .social_media_icons {
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    a > img {
+        width: 20px;  
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+
+    .icon:hover {
+        border-left: 5px solid rgb(250, 249, 249);
+        border-right: 5px solid rgb(250, 249, 249);
+    }
+    .portfolio-container {
+        flex-direction: column;
+        align-content: center;
+    }
+    .wrapper {
+        text-align: center;
+    }
+    .wrapper>a>img {
+        max-width: 90%;
+    }
+}
+/*------------mobile------*/
+@media (max-width: 320px) {
+    *{
+        font-size: 10px;
+        line-height: 2rem;
+    }
+
+    .profession {
+        display: none;
+    }
+
+}
 @font-face {
     font-family: "Ubuntu", sans-serif; 
     src: url("../rsschool-cv/Fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype"); 
