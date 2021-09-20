@@ -138,7 +138,7 @@ nav ul>li>a:hover {
     border-bottom: 5px solid rgb(250, 249, 249);
 }
 
-a > img {
+.icon a > img {
     width: 2rem;  
 }
 
@@ -357,7 +357,7 @@ footer img {
     .main_info {
         flex-direction: column;
     }
-    a > img {
+    .icon a > img {
         width: 4vw;  
         margin-bottom: 10px;
     }
@@ -382,7 +382,7 @@ footer img {
     .social_media_dash {
         min-width: 10%;   
     }
-    a > img {
+    .icon a > img {
         width: 2.8vw;  
         margin-bottom: 10px;
     }
@@ -502,7 +502,7 @@ footer img {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
-    a > img {
+    .icon a > img {
         width: 20px;  
         margin-left: 10px;
         margin-bottom: 0;
@@ -548,7 +548,14 @@ footer img {
 @media (max-width: 575px) {
     *{
         font-size: 16px;
-        line-height: 2rem;
+        line-height: 1.5rem;
+    }
+    .page-container {
+        width: 100%;
+    }
+    main {
+        width: 100%;
+        padding: 0 5px;
     }
     .name {
         max-width: 100%;
@@ -556,6 +563,7 @@ footer img {
     .main-info__photo {
         display: flex;
         flex-direction: column;
+        padding-top: 5px;
     }
     figure {
         margin: 0 auto;
