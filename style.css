@@ -113,6 +113,7 @@ nav ul>li>a:hover {
 
 .about p{
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .social_media_dash {
