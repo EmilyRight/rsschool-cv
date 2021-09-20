@@ -484,6 +484,7 @@ footer img {
     }
     .social_media_dash {
         justify-content: center;
+        align-content: center;
     }
     .social_media_icons {
         flex-direction: row;
@@ -553,12 +554,15 @@ footer img {
     .page-container {
         width: 100%;
     }
+    .profession {
+        display: none;
+    }
     main {
         width: 100%;
         padding: 0 5px;
     }
     .name {
-        max-width: 100%;
+        max-width: 70%;
     }
     .main-info__photo {
         display: flex;
