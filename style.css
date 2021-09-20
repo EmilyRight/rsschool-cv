@@ -396,7 +396,7 @@ footer img {
         padding: 10px;
         margin: 0;
         right: -200px;
-        top: 5.5rem;
+        top: 6rem;
         flex-direction: column;
         justify-content: start;
         background-color: var(--block-color);
@@ -442,8 +442,18 @@ footer img {
         top: 50%;
         transform: scale(1) translate(0px, -50%);
     }
+    .burger-menu.active span {
+        transform: scale(0) translate(0px, -50px);
+    }
+    .burger-menu.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
 
-
+    .burger-menu.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    }
     .name {
         max-width: 50%;
     }
@@ -519,6 +529,19 @@ footer img {
         width: 40px;
         height: 40px;
         font-size: 20px;
+    }
+    header nav>ul {
+        position: absolute;
+        gap: 20px;
+        padding: 10px;
+        margin: 0;
+        right: -200px;
+        top: 6rem;
+        flex-direction: column;
+        justify-content: start;
+        background-color: var(--main-color);
+        z-index: 10;
+        transition: 1s;
     }
 }
 
