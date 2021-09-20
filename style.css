@@ -66,28 +66,29 @@ nav ul>li>a:hover {
 .main-info__section {
     display: flex;
     gap: 1rem;
+    
 }
 
 
 .main-info__photo {
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 10px var(--main-color);
-    
-    
+      
 }
+
 .main-info__block {
     display: flex;
     flex-direction: row;
     position: relative;   
     background-color: var(--block-color);
+    box-shadow: 0 0 10px var(--main-color),
+                0 5px 5px rgb(253, 253, 253); 
 }
 
 .about p{
     margin-bottom: 1rem;
-    
-
 }
+
 .social_media_dash {
     background-color: rgb(114, 156, 128);
     display: flex;
@@ -223,6 +224,7 @@ a:hover{
 }
 
 .portfolio-item a>img {
+    height: 25vh;
     width: 100%;
 }
   .info_item {
@@ -234,10 +236,9 @@ h2 {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    position: relative;
-   
-     
+    position: relative;   
 }
+
 h2:after {
     display: block;
     content: "";
@@ -260,18 +261,17 @@ h2:focus:after {
 }
 .item-container {
     transform: skewY(5deg);
-    
     background-color: rgb(156, 187, 161);
+    animation: skew .3s ease;
 }
+
 .info {
     padding-top: 5rem;
     padding-bottom: 5rem;
     text-align: center;
-    min-height: 10rem;
- 
-    
+    min-height: 10rem;   
 }
-   
+
 p.info ,
 ul.info {
     transform: skewY(-5deg);
@@ -290,6 +290,7 @@ code {
     
     margin: 0 auto;
     text-align: left;
+    word-break:break-all
 }
 footer {
     background-color: rgb(114, 156, 128);
@@ -305,6 +306,39 @@ footer img {
     min-width: 10vh;
     max-height: fit-content;
 }
+
+.up-button {
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    bottom: 75px;
+    right: 40px;
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    border: 5px solid;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    color: rgba(63, 92, 78, 0.2);
+    background-color: rgba(252, 252, 252, 0.5);
+    border-color:  rgb(63, 92, 78, 0.2);
+    outline-color:  rgba(63, 92, 78, 0.2);
+    
+  }
+  
+  .shown {
+    display: inline-block;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.36);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.36);
+  }
+  .hidden {
+    display: none;
+  }
 
 @media (max-width: 1600px){
     .page_container {
@@ -455,6 +489,14 @@ footer img {
     .wrapper>a>img {
         max-width: 90%;
     }
+    .up-button {
+    
+        position: fixed;
+        right: 25px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
 /*------------mobile------*/
 @media (max-width: 320px) {
@@ -465,6 +507,15 @@ footer img {
 
     .profession {
         display: none;
+    }
+
+    .up-button {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
 
 }

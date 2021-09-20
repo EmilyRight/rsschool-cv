@@ -18,21 +18,25 @@
             <nav class = header-menu>
                 <ul class = "header-menu-list">
                     <li><a href="#about">About me</a></li>
-                    <li><a>My portfolio</a></li>
-                    <li><a>My Education</a></li>
-                    <li><a>I'm strong at...</a></li>
-                    <li><a>My English</a></li>
-                    <li><a>My code</a></li>
+                    <li><a href="#portfolio">My portfolio</a></li>
+                    <li><a href="#education">My Education</a></li>
+                    <li><a href="#skills">I'm strong at...</a></li>
+                    <li><a href="#languages">My English</a></li>
+                    <li><a href="#code">My code</a></li>
                 </ul>
             </nav>
             <div class = "burger-menu">
                 <span class ="menu-icon"></span>
             </div>
         </header>
+        <button class="up-button" type="button">
+            ↑
+            <span class="hidden">Наверх</span>
+        </button>
         <main> 
             <section class="main-info">
             <div class = "main-info__header">
-                    <p class = "name">Emilya Kanarskaya</p>
+                    <h1 class = "name">Emilya Kanarskaya</h1>
                     <p class="profession">Frontend Developer</p>
                 </div>
                 <div class="main-info__section">
@@ -82,14 +86,17 @@
                         </div>
                         
                     </div>
-                    <article class = "about info_item">
-                        <h2><a name = "about"></a>About me</h2>
-                        <p>Hey there! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem soluta corrupti rerum laudantium fugit ea excepturi iste dolorem necessitatibus veniam itaque sequi voluptates, quam cumque dolores quas repellat, ullam laboriosam!</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ab quaerat. Rem labore reprehenderit odit veniam, deleniti aperiam culpa enim sapiente? Nesciunt soluta magni inventore expedita distinctio obcaecati nobis ipsa?</p>
+                    <article class = "about info_item" id = "about">
+                        <h2>About me</a></h2>
+                        <p>Hey there! My name is Emilya Kanarskaya and I`m at the very beginning of my way to frontend. It's beautiful and hard, but I love it!</p>
+                        <p>
+                        In my life, I managed to be a boring accountant and a real musician, teacher and economist, successfully combining
+                        creativity with logical thinking and mathematical precision. </p>
+                        <p>I am sure that I will find my place in front-end development - it’s incredibly interesting to see immediate results from my own current actions. Like magic. </p>
                     </article>
                 </div>
             </section>
-            <section class = "portfolio">
+            <section class = "portfolio" id = "portfolio"></section>">
                 <h2>My projects</h2>
                 <div class="portfolio-container">
                     <div class="portfolio-item">
@@ -123,13 +130,16 @@
                 </div>
             </section>
             <section class="info_items">
-                <div class="info_item">
+                <div class="info_item" id = "education">
                     <h2>Education</h2>
                     <div class="item-container" id = "education">
-                        <p class = "info">2009-2015s: Kurgan State University, Department of Economics</p>
+                        <ul class = "info">
+                            <li><b>2009-2015:</b> Kurgan State University, Department of Economics</li>
+                            <li><b>2005-2009:</b> Kurgan Musical Colledge, Department of Academic Vocal</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="info_item">
+                <div class="info_item" id = "skills">
                         <h2>Technical skills</h2>
                     <div class="item-container" id = "hard">
                         <ul class = "info">
@@ -154,7 +164,7 @@
                     </div>
                 </div>
                 
-                <div class="info_item">
+                <div class="info_item" id = "languages">
                     <h2>Languages</h2>
                     <div class="item-container">
                         <ul class="info">
@@ -174,7 +184,7 @@
                     </div>
                 </div>
                     
-                <div class="info_item main code">
+                <div class="info_item main code" id = "code">
                     <h2>Code example</h2>
                     <pre>
                         <code>
