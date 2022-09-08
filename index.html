@@ -127,22 +127,18 @@
           <pre><code>
 function slidesPlugin(activeSlide=0) { 
     const slides = document.querySelectorAll(“.slide”);
-
     slides[activeSlide].classList.add("active");
     for (const slide of slides) {
-
-    slide.addEventListener(“click”, () =&gt;> {
+    slide.addEventListener(“click”, () =&gt; {
         clearActiveClasses(); 
         slide.classList.add(“active”)
     });
 };
-
-    let clearActiveClasses = () =&gt;> {
-        slides.forEach((slide) =&gt;> { 
+    let clearActiveClasses = () =&gt; {
+        slides.forEach((slide) =&gt; { 
         slide.classList.remove(“active”) 
     }); 
 };
-
 };
                 slidesPlugin(4);
             </code></pre>
