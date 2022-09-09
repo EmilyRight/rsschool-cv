@@ -121,19 +121,19 @@
         <div class="info_item main code">
           <h2>Code example</h2>
           <pre><code>
-function slidesPlugin(activeSlide=0) { 
+function slidesPlugin(activeSlide=0) {
     const slides = document.querySelectorAll(“.slide”);
     slides[activeSlide].classList.add("active");
     for (const slide of slides) {
     slide.addEventListener(“click”, () =&gt; {
-        clearActiveClasses(); 
+        clearActiveClasses();
         slide.classList.add(“active”)
     });
 };
     let clearActiveClasses = () =&gt; {
-        slides.forEach((slide) =&gt; { 
-        slide.classList.remove(“active”) 
-    }); 
+        slides.forEach((slide) =&gt; {
+        slide.classList.remove(“active”)
+    });
 };
 };
                 slidesPlugin(4);
@@ -141,9 +141,9 @@ function slidesPlugin(activeSlide=0) {
         </div>
       </main>
       <footer>
-        <a href="https://rs.school/js/"
-          ><img src="img/rs_school_js.svg" alt="Visit a course"
-        ></a>
+        <a href="https://rs.school/js/">
+          <img src="img/rs_school_js.svg" alt="Visit a course">
+        </a>
         <a href="https://github.com/EmilyRight"><strong>GitHub</strong></a>
         <p><b>2022</b></p>
       </footer>
